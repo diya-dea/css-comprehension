@@ -1,5 +1,5 @@
 body {
-  background: #f0f4ff;
+  background: #dbeafe; /* soft light blue background */
   font-family: 'Segoe UI', sans-serif;
   display: flex;
   justify-content: center;
@@ -9,13 +9,14 @@ body {
 }
 
 .profile-card {
-  background: #fff;
+  background: #ffffff; /* white card */
   padding: 30px 25px;
   border-radius: 15px;
   text-align: center;
   width: 320px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
+
 
 .avatar {
   width: 120px;

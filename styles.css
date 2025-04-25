@@ -17,9 +17,8 @@ body {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-
 .avatar {
-  width: 120px;
+  width: 120px; /* Reduced size to fit in the card */
   height: 120px;
   border-radius: 50%;
   object-fit: cover;

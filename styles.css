@@ -18,8 +18,8 @@ body {
 }
 
 .avatar {
-  width: 120px; /* Reduced size to fit in the card */
-  height: 120px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #6366f1;

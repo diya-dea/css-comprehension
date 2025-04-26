@@ -1,98 +1,76 @@
-/* Reset default margins and paddings */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* General styles */
 body {
-  background-color: #f0f2f5;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  margin: 0;
 }
 
-/* Profile Card Container */
-.profile-card {
-  background: white;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  border-radius: 16px;
-  padding: 2rem;
-  width: 320px;
-  text-align: center;
+html {
+  font-family: 'Helvetica neue', Arial, 'sans serif';
+  font-size: 10px;
+  background-color: #ccc;
 }
 
-/* Inner Box */
-.box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* Card container */
+.card {
+  width: 35em;
+  height: 22em;
+  margin: 5em auto;
+  background-color: red;
+  border: 0.2em solid black;
+  border-radius: 1.5em;
 }
 
-/* Profile Image - Perfect Circle */
-.avatar {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;       /* Makes it circular */
-  object-fit: cover;        /* Ensures it fills the circle nicely */
-  margin-bottom: 1rem;
-  border: 3px solid #4A90E2;
+/* Card header */
+.card header {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0));
+  border-radius: 1.5em 1.5em 0 0;
 }
 
-/* Name */
-h2 {
-  font-size: 1.5rem;
-  color: #333;
+/* Card footer */
+.card footer {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.1));
+  border-radius: 0 0 1.5em 1.5em;
 }
 
-/* Tagline */
-.tag {
-  color: #777;
-  font-size: 0.95rem;
-  margin-top: 4px;
+/* Card article img */
+.card article img {
+  max-height: 100%;
+  float: right;
 }
 
-/* Bio */
-.bio {
-  font-size: 0.9rem;
-  color: #555;
-  margin: 12px 0 20px 0;
-  text-align: center;
+/* Reset margins on h2 and p elements */
+h2, p {
+  margin: 0;
 }
 
-/* Social Links */
-.social-links {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  margin-bottom: 20px;
+/* Header and footer with computed height of 50px (5em) */
+.card header, .card footer {
+  height: 3em;
+  padding: 1em;
 }
 
-.social-links a {
-  font-size: 1.4rem;
-  text-decoration: none;
-  color: #555;
-  transition: color 0.3s;
+/* Article styling with height of 120px (12em) */
+.card article {
+  height: 12em;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
-.social-links a:hover {
-  color: #4A90E2;
+/* Header h2 styling */
+.card header h2 {
+  color: #ffffff;
+  font-size: 2em;
+  line-height: 1.5;
 }
 
-/* Follow Button */
-button {
-  background-color: #4A90E2;
-  color: white;
-  border: none;
-  padding: 10px 24px;
-  font-size: 1rem;
-  border-radius: 24px;
-  cursor: pointer;
-  transition: background-color 0.3s;
+/* Footer paragraph styling */
+.card footer p {
+  color: #ffffff;
+  font-size: 1.5em;
+  line-height: 2;
 }
 
-button:hover {
-  background-color: #357ABD;
+/* Article paragraph styling */
+.card article p {
+  font-size: 1.2em;
+  padding: 1em;
+  color: #ddd;
 }

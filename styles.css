@@ -14,19 +14,14 @@ body {
   height: 100vh;
 }
 
-/* Profile Card */
+/* Profile Card Container */
 .profile-card {
   background: white;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
   padding: 2rem;
-  width: 300px;
+  width: 320px;
   text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.profile-card:hover {
-  transform: translateY(-5px);
 }
 
 /* Inner Box */
@@ -36,12 +31,12 @@ body {
   align-items: center;
 }
 
-/* Profile Image */
+/* Profile Image - Perfect Circle */
 .avatar {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;       /* Makes it circular */
+  object-fit: cover;        /* Ensures it fills the circle nicely */
   margin-bottom: 1rem;
   border: 3px solid #4A90E2;
 }
@@ -64,6 +59,7 @@ h2 {
   font-size: 0.9rem;
   color: #555;
   margin: 12px 0 20px 0;
+  text-align: center;
 }
 
 /* Social Links */
@@ -75,7 +71,7 @@ h2 {
 }
 
 .social-links a {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   text-decoration: none;
   color: #555;
   transition: color 0.3s;
